@@ -10,7 +10,7 @@ console.log("My full name is:", myFullName);
 console.log("========= Step 2 =========");
 
 var myLove;
-myLove = "I Love only JS";
+myLove = "I Love only JavaScript";
 console.log("MY love is:", myLove);
 
 console.log("========= Step 3 =========");
