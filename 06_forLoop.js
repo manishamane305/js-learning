@@ -23,3 +23,16 @@ console.log(`=============WAP to Print number 5, 10, 15, 20, ..... 50  =========
 for (let index = 5; index <=50; index = index+5) {
     console.log(index); 
 }
+
+
+console.log(`================== print number from 20 to 30 ===================`);
+for (let index = 20; index <= 30; index++) {
+    console.log(index);
+}
+
+console.log(`================== print number odd number from 1 to 10  ===================`);
+
+for (let index = 1; index <= 10; index += 2) {
+    console.log(index);
+    
+}

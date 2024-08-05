@@ -49,14 +49,17 @@ const student = {
    console.log(`Update`);
    
    student.isMarried = true;
+   console.log(student);
    
    student.friendsList[1] = "Bill gates";
+   console.log(student);
    
     
    
    console.log(`Delete`);
    
    delete student.city;
+   console.log(student);
 
 
 
@@ -75,3 +78,5 @@ const student = {
     }
 
 }
+
+person.display();

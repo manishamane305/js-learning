@@ -76,6 +76,13 @@ var typeOfMarried = typeof isMarried;
 console.log("Are you married:", isMarried,  "and variable is married type is:", typeOfMarried);
 
 
+var str = "manisha";
+console.log(`variable type is: ${typeof str}`);
+
+var str = 126478;
+var newStr = typeof str;
+console.log(`Type of variable is: ${newStr}`);
+
 
 
 

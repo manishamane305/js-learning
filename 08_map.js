@@ -1,5 +1,5 @@
 const map = new Map();
-map.set("rollNumber, 10");
+map.set("rollNumber", 10);
 map.set("city", "Pune");
 map.set("age", 22);
 map.set("rollNumber", 30); // it will override on key if we add double key

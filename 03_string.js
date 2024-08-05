@@ -22,7 +22,7 @@ console.log(`Concat string is: ${result}`);
 console.log(`========== toUppercase() ==============`);
 var lastName = "Sharma";
 var result = lastName.toUpperCase();
-console.log(`Last name in upper case is: ${lastName}`);
+console.log(`Last name in upper case is: ${result}`);
 
 console.log(`========== replace() ==============`);
 var greet = "Good Morning";

@@ -19,9 +19,11 @@ const sliceFrom1To3 = array.slice(1, 3);
 console.log(sliceFrom1To3);
 
 
-var array = [10, 20, 30, 40, 15];
 
 console.log(`=== splice() =====`);
+
+var array = [10, 20, 30, 40, 15];
+
 
 const deletedElements = array.splice(2);
 
@@ -88,3 +90,7 @@ console.log(array);
 array.splice(1, 3, 500);
 
 console.log(array);
+
+console.log(`join()method`);
+const result =  array.join(", ");
+console.log(result);

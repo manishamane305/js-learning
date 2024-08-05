@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Context Page</title>
+    <style>
+        * {
+            justify-content: center;
+            margin-top: 20px;
+        }
+        form {
+            display: flex;
+            align-items: center;
+        }
+        form table {
+            display: flex;
+        }
+        form table tbody {
+            display: flex;
+        }
+        form table tr {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-right: 20px;
+        }
+        #inputOne, #inputTwo {
+            padding: 15px;
+            border: 1px solid #ccc;
+            position: relative;
+            border-radius: 7px;
+            font-size: large;
+            margin-top: 0px;
+        }
+        label {
+            font-weight: bolder;
+        }
+        .color-box {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            right: 2px;
+            top: 0%;
+            padding: 6px;
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .color-box-one {
+            background-color: #112A46;
+        }
+        .color-box-two {
+            background-color: #ACC8E5;
+        }
+        .input-container {
+            position: relative;
+            display: inline-block;
+        }
+        .color-picker {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="inputOne" id="labelOne">Text color</label><br>
+                        <div class="input-container">
+                            <input type="text" value="#112A46" id="inputOne">
+                            <div class="color-box color-box-one" id="colorBoxOne"></div>
+                            <input type="color" class="color-picker" id="colorPickerOne">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="inputTwo" id="labelTwo">Background color</label><br>
+                        <div class="input-container">
+                            <input type="text" value="#ACC8E5" id="inputTwo">
+                            <div class="color-box color-box-two" id="colorBoxTwo"></div>
+                            <input type="color" class="color-picker" id="colorPickerTwo">
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+
+    <script>
+        const colorBoxOne = document.getElementById('colorBoxOne');
+        const colorPickerOne = document.getElementById('colorPickerOne');
+        const inputOne = document.getElementById('inputOne');
+
+        colorBoxOne.addEventListener('click', () => {
+            colorPickerOne.click();
+        });
+
+        colorPickerOne.addEventListener('input', () => {
+            inputOne.value = colorPickerOne.value;
+            colorBoxOne.style.backgroundColor = colorPickerOne.value;
+        });
+
+        const colorBoxTwo = document.getElementById('colorBoxTwo');
+        const colorPickerTwo = document.getElementById('colorPickerTwo');
+        const inputTwo = document.getElementById('inputTwo');
+
+        colorBoxTwo.addEventListener('click', () => {
+            colorPickerTwo.click();
+        });
+
+        colorPickerTwo.addEventListener('input', () => {
+            inputTwo.value = colorPickerTwo.value;
+            colorBoxTwo.style.backgroundColor = colorPickerTwo.value;
+        });
+    </script>
+
+</body>
+</html>

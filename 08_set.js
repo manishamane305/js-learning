@@ -69,3 +69,11 @@ console.log(array);
 // array = newArray;
 
 // console.log(array);
+
+
+
+let mySet = new Set([1, 2, 3, 4, 4, 5]);
+console.log(mySet);
+
+mySet.add(30);
+console.log(mySet);

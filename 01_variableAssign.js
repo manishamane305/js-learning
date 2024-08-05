@@ -1,7 +1,7 @@
 console.log("========= Step 1 =========");
 var myFullName;//Declare
-console.log("MY name is:", myFullName); // initialization
-myFullName = "Manisha Mane"; 
+console.log("MY name is:", myFullName); // Undefined
+myFullName = "Manisha Mane"; // initialization
 console.log("My name is:", myFullName); 
 
 myFullName = "Manisha Prabhakar Mane"; //Update

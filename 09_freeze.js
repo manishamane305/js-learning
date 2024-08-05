@@ -57,3 +57,5 @@ const address = {
 const mergedObject = Object.assign({}, anil, address);
 
 console.log(mergedObject);
+
+

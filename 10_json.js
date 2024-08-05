@@ -1,3 +1,5 @@
+//employeeJSON this is json string
+
 const employeeJSON = `{
     "id": 123,
     "name": "Billgates",
@@ -28,7 +30,7 @@ for (const element of empSkills) {
 
 
 
-console.log(`====== Object to JSON conversion using JSON.stringfy()========`);
+console.log(`====== Object to JSON conversion using JSON.stringify()========`);
 const student = {
     stdName: "Jenny",
     rollNum: 107,

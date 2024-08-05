@@ -30,3 +30,16 @@ console.log(`6 digit is Google word: ${result}`);
 wordLength("JavaScript");
 wordLength("Developer");
 wordLength("Google");
+
+
+function wordOf(argOne, argTwo, argThree){
+    var result = argOne.length%2 == 0 ? "Even" : "Odd";
+    return result;
+
+    }
+   var words =  wordOf("JavaScript");
+    console.log(`word javascript length of word: ${words}`);
+    var words =  wordOf("Developer");
+    console.log(`word developer length of word: ${words}`);
+    var words =  wordOf("Google");
+    console.log(`word google length of word: ${words}`);

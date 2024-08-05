@@ -1,12 +1,15 @@
-// console.log(city);  //is means we can access 
+// console.log(city);  // we can access using var keyword before declaration
 // var city;
 
 
-// console.log(age);
+// console.log(age);   // in let we can not log value before declaration
 // let age;
 
-// console.log(pin);
+// console.log(pin);   //we can not log value before declaration
 // const pin = 462789;
+
+
+console.log(`=============== Function==============`);
 
 show(); //Named Function   // is is hosted 
 function show() {
@@ -20,3 +23,5 @@ display();
 var display = function(){
     console.log("display");
 }
+
+

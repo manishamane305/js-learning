@@ -4,7 +4,7 @@ const notesPromise = new Promise((resolve, reject)=>{
 
     if (isPrepared) {
 
-       resolve("Buddies take this one and also prepare your notes"); 
+        resolve("Buddies take this one and also prepare your notes"); 
 
     }
 

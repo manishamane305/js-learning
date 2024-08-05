@@ -17,6 +17,6 @@ for (const element of array) {
 // Join method
 var array = [10, 20, 30, 40, 15];
 
-const result = array.join(",");
+const result = array.join(", ");
 
 console.log(result);
